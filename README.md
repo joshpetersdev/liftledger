@@ -18,6 +18,8 @@ This is the backend service for LiftLedger applications.
 ## 🧪 Testing
 🚧 Under construction
 
+## 🐋 Docker
+
 ## 📚 Future Improvements
 - User authentication (Sign up / Sign in)
 
