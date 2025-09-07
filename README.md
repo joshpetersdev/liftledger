@@ -1,9 +1,12 @@
-# LiftLedger Backend
+# LiftLedger Backend Service
 
 This is the backend service for LiftLedger applications.
 
 ## 🚀 Features
+- Create users
+- Authenticate and Authorize users
 - Create workouts
+- Update workouts
 
 ## 🗺️ API Routes
 | Method | Endpoint | Description
@@ -11,6 +14,10 @@ This is the backend service for LiftLedger applications.
 | `GET`  | `/health` | Checks the status of the server |
 | `GET`  | `/workouts/{id}` | Retrieve a workout by ID |
 | `POST` | `/workouts` | Create a workout |
+| `PUT`  | `/workouts/{id}` | Update workout by workout ID |
+| `DELETE` | `/workouts/{id}` | Delete workout by workout ID |
+| `POST` | `/users` | Create a new user |
+| `POST` | `/tokens/authentication` | Authentication a user | 
 
 ## 🔒 Authentication
 🚧 Under construction
@@ -20,7 +27,7 @@ This is the backend service for LiftLedger applications.
 
 ## 🐳 Docker Setup
 This project uses Docker Compose to run PostgreSQL databases for both development and testing.
-### 📦 Services
+### Services
 - db - Main development database (listens on port 5432)
 - test_db - Separate testing database (listens on port 5433)
 Default credentials for both:
